@@ -1,0 +1,33 @@
+# ==========================================
+# Robots.txt for 8BallPlay.io
+# Free Online 8-Ball Pool Web Game
+# ==========================================
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /500.html
+
+# Search Engine Specific Crawlers
+User-agent: Googlebot
+Allow: /
+Disallow: /404.html
+Disallow: /500.html
+
+User-agent: Bingbot
+Allow: /
+Disallow: /404.html
+Disallow: /500.html
+
+User-agent: Applebot
+Allow: /
+Disallow: /404.html
+Disallow: /500.html
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /404.html
+Disallow: /500.html
+
+# XML Sitemap Location
+Sitemap: https://8ballplay.io/sitemap.xml

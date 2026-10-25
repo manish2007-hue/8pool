@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <title>404: Scratch! Page Not Found — 8BallPlay.io</title>
+  <meta name="description" content="The page or pool room you are looking for has scratched into an unlisted pocket. Return to the table and play 8-ball pool online." />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #050608;
+      color: #f3f4f6;
+    }
+    @keyframes floatBall {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(8deg); }
+    }
+    @keyframes pulseShadow {
+      0%, 100% { transform: scale(1); opacity: 0.6; }
+      50% { transform: scale(0.85); opacity: 0.3; }
+    }
+    .floating-ball {
+      animation: floatBall 4s ease-in-out infinite;
+    }
+    .shadow-pulse {
+      animation: pulseShadow 4s ease-in-out infinite;
+    }
+    .billiard-gradient {
+      background: radial-gradient(circle at 35% 35%, #3f3f46 0%, #18181b 45%, #09090b 100%);
+    }
+  </style>
+</head>
+<body class="min-h-screen w-screen flex flex-col justify-between bg-[#050608] text-zinc-100 overflow-x-hidden selection:bg-emerald-500 selection:text-black">
+
+  <!-- TOP HEADER -->
+  <header class="w-full h-16 border-b border-zinc-800/80 bg-[#0c0e12]/80 backdrop-blur-md px-4 sm:px-8 flex items-center justify-between z-20">
+    <a href="index.html" class="flex items-center gap-2.5 group">
+      <div class="w-8 h-8 rounded-full bg-black border-2 border-emerald-400 flex items-center justify-center text-xs font-black text-white shadow-[0_0_15px_rgba(16,185,129,0.35)] group-hover:scale-105 transition-transform">
+        8
+      </div>
+      <div class="flex flex-col">
+        <span class="font-black text-sm tracking-tight text-white flex items-center gap-1">
+          8BALLPLAY<span class="text-emerald-400">.IO</span>
+        </span>
+        <span class="text-[10px] text-zinc-400 font-medium -mt-1">Browser Cue Sports</span>
+      </div>
+    </a>
+
+    <div class="flex items-center gap-3">
+      <a href="index.html#game" class="px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-bold transition-all shadow-md hover:shadow-emerald-500/20 flex items-center gap-1.5">
+        <span>🎱</span>
+        <span>Play Pool Now</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN 404 CONTENT -->
+  <main class="flex-1 w-full flex items-center justify-center p-4 sm:p-8 relative">
+    <!-- Ambient Green Glow Behind Error graphic -->
+    <div class="absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none -z-10"></div>
+
+    <div class="max-w-xl w-full bg-[#12151a] border border-zinc-800/80 rounded-2xl p-6 sm:p-10 shadow-2xl relative text-center flex flex-col items-center">
+      
+      <!-- Top Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-black uppercase tracking-wider mb-5">
+        <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span>
+        Error 404 &bull; Ball Scratched
+      </div>
+
+      <!-- Animated Graphic: Cue Ball Scratching / Pocketing -->
+      <div class="relative w-44 h-44 mb-6 flex items-center justify-center">
+        <!-- Pool Pocket Rim Representation -->
+        <div class="absolute inset-0 rounded-full border-4 border-dashed border-zinc-700/60 bg-[#090b0e] shadow-inner flex items-center justify-center">
+          <div class="w-32 h-32 rounded-full bg-black/90 shadow-[inset_0_8px_16px_rgba(0,0,0,0.9)] flex items-center justify-center">
+            <span class="text-zinc-600/40 text-xs font-black tracking-widest uppercase">Pocket Hole</span>
+          </div>
+        </div>
+
+        <!-- Floating 8-Ball with 404 Number -->
+        <div class="floating-ball relative z-10 w-24 h-24 rounded-full billiard-gradient border-2 border-zinc-600 shadow-[0_12px_24px_rgba(0,0,0,0.9)] flex items-center justify-center">
+          <!-- White Circle Decal -->
+          <div class="w-12 h-12 rounded-full bg-white flex flex-col items-center justify-center shadow-inner">
+            <span class="text-black font-black text-base tracking-tighter leading-none">404</span>
+          </div>
+        </div>
+
+        <!-- Shadow beneath the ball -->
+        <div class="shadow-pulse absolute bottom-6 w-20 h-4 rounded-full bg-black/80 blur-xs"></div>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="text-2xl sm:text-3xl font-black text-white tracking-tight mb-2">
+        Scratch! That Pocket Doesn't Exist.
+      </h1>
+
+      <!-- Description -->
+      <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed max-w-md mb-6">
+        Looks like your shot went off the rails or fell through an unlisted pocket. The URL, multiplayer room code, or page you’re trying to reach has moved or been re-racked.
+      </p>
+
+      <!-- Quick Room Code Jump Box -->
+      <div class="w-full max-w-md bg-[#090b0e] border border-zinc-800 rounded-xl p-3 mb-6 flex flex-col sm:flex-row items-center gap-2">
+        <input 
+          id="quick-room-input" 
+          type="text" 
+          maxlength="8" 
+          placeholder="Enter 6-digit Room Code..." 
+          class="w-full sm:flex-1 bg-zinc-900 border border-zinc-700 rounded-lg px-3 py-2 text-xs text-white placeholder-zinc-500 font-mono tracking-wider focus:outline-none focus:border-emerald-500 uppercase"
+        />
+        <button 
+          id="quick-join-btn" 
+          type="button" 
+          class="w-full sm:w-auto px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-black transition-all shrink-0">
+          Join Room
+        </button>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-md">
+        <a href="index.html#game" class="w-full py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold text-xs sm:text-sm transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2">
+          <span>🎱</span>
+          <span>Return to Pool Table</span>
+        </a>
+
+        <a href="index.html#leaderboard" class="w-full py-2.5 px-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-white font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2">
+          <span>🏆</span>
+          <span>View Leaderboard</span>
+        </a>
+      </div>
+
+      <!-- Secondary Links -->
+      <div class="mt-6 pt-5 border-t border-zinc-800/80 w-full flex flex-wrap items-center justify-center gap-4 text-xs text-zinc-400">
+        <a href="index.html#howto" class="hover:text-emerald-400 transition-colors">How to Play</a>
+        <span class="text-zinc-600">&bull;</span>
+        <a href="index.html#faq" class="hover:text-emerald-400 transition-colors">FAQ</a>
+        <span class="text-zinc-600">&bull;</span>
+        <a href="index.html#about" class="hover:text-emerald-400 transition-colors">About Us</a>
+        <span class="text-zinc-600">&bull;</span>
+        <a href="index.html#contact" class="hover:text-emerald-400 transition-colors">Report Bug</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full border-t border-zinc-800/80 bg-[#0c0e12] py-4 px-6 text-center text-xs text-zinc-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+    <div>
+      &copy; 2026 8BallPlay.io. All rights reserved. Free browser cue sports.
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="index.html#privacy" class="hover:text-zinc-300 transition-colors">Privacy Policy</a>
+      <a href="index.html#terms" class="hover:text-zinc-300 transition-colors">Terms of Service</a>
+      <a href="index.html#contact" class="hover:text-zinc-300 transition-colors">Support</a>
+    </div>
+  </footer>
+
+  <script>
+    // Quick Room Code Navigation
+    const joinInput = document.getElementById('quick-room-input');
+    const joinBtn = document.getElementById('quick-join-btn');
+
+    function jumpToRoom() {
+      const code = joinInput.value.trim().toUpperCase();
+      if (code) {
+        window.location.href = 'index.html?room=' + encodeURIComponent(code) + '#game';
+      } else {
+        window.location.href = 'index.html#game';
+      }
+    }
+
+    joinBtn.addEventListener('click', jumpToRoom);
+    joinInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') jumpToRoom();
+    });
+  </script>
+</body>
+</html>
