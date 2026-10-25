@@ -1,0 +1,22 @@
+{
+  "name": "8pool",
+  "version": "1.0.0",
+  "description": "8-Ball Pool web game with multiplayer, AI, and SEO",
+  "scripts": {
+    "deploy": "wrangler pages deploy . --project-name 8pool --branch main",
+    "deploy:preview": "wrangler pages deploy . --project-name 8pool",
+    "pages:deploy": "wrangler pages deploy . --project-name 8pool --branch main"
+  },
+  "keywords": [
+    "8ball",
+    "pool",
+    "billiards",
+    "html5",
+    "game"
+  ],
+  "author": "manish2007-hue",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.152.0"
+  }
+}
